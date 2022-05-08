@@ -1,0 +1,33 @@
+tr:hover{background-color: yellow;
+		font-size: 20px;}
+
+@media screen and (max-width: 768px) {
+  table {
+    border: 0;
+    width: 100%;
+  }
+ table tr {
+    border-bottom: 3px solid green;
+    display: block;
+    margin-bottom: .725em;
+  }
+  table td {
+    border-bottom: 1px solid green;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }  
+table td img {
+    width:100%;
+}
+}
+
